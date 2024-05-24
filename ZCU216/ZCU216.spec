@@ -1,5 +1,8 @@
-ARCH_ZCU216 := aarch64
-BSP_ZCU216 := xilinx-zcu216-v2020.2-final.bsp
+# Copyright (C) 2022 Xilinx, Inc
+# SPDX-License-Identifier: BSD-3-Clause
 
-STAGE4_PACKAGES_ZCU216 := pynq xrfclk xrfdc xsdfec ethernet
-STAGE4_PACKAGES_ZCU216 += xrt 
+ARCH_ZCU216 := aarch64
+BSP_ZCU216 := ZCU216.bsp
+
+STAGE4_PACKAGES_ZCU216 := pynq ethernet xrt xrfclk xrfdc
+STAGE4_PACKAGES_ZCU216 += tics
