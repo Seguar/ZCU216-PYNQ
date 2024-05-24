@@ -14,8 +14,9 @@ Press NO to configure bash
 
 sudo dpkg --add-architecture i386
 sudo apt update
-
+give full rights to pynq directory
 /bin/bash /pynq/sdbuild/scripts/setup_host.sh
+
 
 
 
