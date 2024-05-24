@@ -18,6 +18,6 @@ give full rights to pynq directory
 /bin/bash /pynq/sdbuild/scripts/setup_host.sh
 
 
-
+sudo chmod -R 777 PYNQ/
 
 make images BOARDS=ZCU216 PYNQ_SDIST=/prebuilt/pynq_sdist.tar.gz PYNQ_ROOTFS=/prebuilt/pynq_rootfs.aarch64.tar.gz
