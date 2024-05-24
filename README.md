@@ -19,5 +19,7 @@ give full rights to pynq directory
 
 
 sudo chmod -R 777 PYNQ/
+wget https://bit.ly/pynq_aarch64_v3_0_1 pynq_rootfs.aarch64.tar.gz
+wget https://bit.ly/pynq_sdist_v3_0_1 pynq_sdist.tar.gz
 
 make images BOARDS=ZCU216 PYNQ_SDIST=/prebuilt/pynq_sdist.tar.gz PYNQ_ROOTFS=/prebuilt/pynq_rootfs.aarch64.tar.gz
