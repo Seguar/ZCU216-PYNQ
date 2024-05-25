@@ -10,9 +10,9 @@ Press NO to configure bash
 #Install Vivado, Vitis and PetaLinux 2022.1
 #Make sure that they are in PATH
 export PATH="/opt/crosstool-ng/bin:/opt/qemu/bin:$PATH"
-source /work/Vivado/2022.1/settings.sh
-source /work/Vitis/2022.1/settings.sh
-source /work/PetaLinux/2022.1/tools/settings.sh
+source /work/Vivado/2022.1/settings64.sh
+source /work/Vitis/2022.1/settings64.sh
+source /work/PetaLinux/2022.1/tool/settings.sh
 petalinux-util --webtalk off
 
 #give full rights to pynq directory

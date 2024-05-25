@@ -3,6 +3,6 @@
 
 ARCH_ZCU216 := aarch64
 BSP_ZCU216 := ZCU216.bsp
-
+BITSTREAM_ZCU216 := base.bit
 STAGE4_PACKAGES_ZCU216 := pynq ethernet xrt xrfclk xrfdc
 STAGE4_PACKAGES_ZCU216 += tics
