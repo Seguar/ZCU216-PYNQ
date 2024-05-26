@@ -1,9 +1,19 @@
 # ZCU216-PYNQ
+PYNQ for ZCU216 image:
+https://drive.google.com/file/d/1p9I-GHuvxmw-IJPbIhEwCG40TPVRwWEb/view?usp=sharing
 xrfclk-patch for PYNQ
 https://github.com/Xilinx/RFSoC-PYNQ/tree/master/boards/RFSoC4x2/packages/xrfclk-patch
 xrfdc-patch for PYNQ
 https://github.com/Xilinx/RFSoC-MTS/tree/main/boards/patches
+
+If you have problems with certificates check time and date on your board.
+You can set it from the internet with the following command:
+```bash
+sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+```
+# Manual build
 Fresh WSL2 Ubuntu 20.04 LTS
+
 ```bash
 # Preparations: or like in https://github.com/nick-petrovsky/PYNQ-ZYBO Readme.md
 
