@@ -33,7 +33,7 @@ petalinux-util --webtalk off
 
 #give full rights to pynq directory
 sudo chmod -R 777 /work/PYNQ
-git checkout de6b6fc3
+git checkout 93ddd21
 
 /bin/bash /work/PYNQ/sdbuild/scripts/setup_host.sh
 
