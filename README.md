@@ -1,5 +1,5 @@
 # ZCU216-PYNQ
-[PYNQ for ZCU216 compiled image](https://drive.google.com/file/d/1p9I-GHuvxmw-IJPbIhEwCG40TPVRwWEb/view?usp=sharing)
+[PYNQ 3.0.1 for ZCU216 compiled image](https://drive.google.com/file/d/1p9I-GHuvxmw-IJPbIhEwCG40TPVRwWEb/view?usp=sharing)
 
 [xrfclk-patch for PYNQ](https://github.com/Xilinx/RFSoC-PYNQ/tree/master/boards/RFSoC4x2/packages/xrfclk-patch)
 
