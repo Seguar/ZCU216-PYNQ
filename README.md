@@ -1,10 +1,10 @@
 # ZCU216-PYNQ
-PYNQ for ZCU216 image:
-https://drive.google.com/file/d/1p9I-GHuvxmw-IJPbIhEwCG40TPVRwWEb/view?usp=sharing
-xrfclk-patch for PYNQ
-https://github.com/Xilinx/RFSoC-PYNQ/tree/master/boards/RFSoC4x2/packages/xrfclk-patch
-xrfdc-patch for PYNQ
-https://github.com/Xilinx/RFSoC-MTS/tree/main/boards/patches
+[PYNQ for ZCU216 compiled image](https://drive.google.com/file/d/1p9I-GHuvxmw-IJPbIhEwCG40TPVRwWEb/view?usp=sharing)
+
+[xrfclk-patch for PYNQ](https://github.com/Xilinx/RFSoC-PYNQ/tree/master/boards/RFSoC4x2/packages/xrfclk-patch)
+
+[xrfdc-patch for PYNQ](https://github.com/Xilinx/RFSoC-MTS/tree/main/boards/patches)
+
 
 If you have problems with certificates check time and date on your board.
 You can set it from the internet with the following command:
