@@ -1,0 +1,2 @@
+# Board register dumps are byte-preserved, including their original CRLF.
+/runtime/beamforming/clocks/* -text

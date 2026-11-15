@@ -1,0 +1,14 @@
+{
+  "collection_date": "2026-11-15",
+  "source": "Installed xrfclk register files on the inspected ZCU216 PYNQ 3.0.1 board",
+  "files": [
+    {
+      "file": "LMK04828_500.0.txt",
+      "sha256": "9eb1fe79be9f095d654740ec9629e06fe7ebe7501396f5642e3eb68d6c53eae1"
+    },
+    {
+      "file": "LMX2594_2000.0.txt",
+      "sha256": "142e2125d77683691c3fc1dc2a974c8b972dab9f0fd17b69e1ca15e03a2dc3f1"
+    }
+  ]
+}

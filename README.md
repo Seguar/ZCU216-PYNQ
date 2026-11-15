@@ -1,4 +1,10 @@
 # ZCU216-PYNQ
+
+For the inspected ZCU216 beamforming deployment, see the
+[2026-11-15 runtime snapshot](runtime/beamforming/README.md): PYNQ 3.0.1,
+recovered LMK/LMX register files, application repository, and toolchain limits.
+The image-build instructions below remain the legacy 2022.1 flow.
+
 [PYNQ 3.0.1 for ZCU216 compiled image](https://drive.google.com/file/d/1p9I-GHuvxmw-IJPbIhEwCG40TPVRwWEb/view?usp=sharing)
 
 [xrfclk-patch for PYNQ](https://github.com/Xilinx/RFSoC-PYNQ/tree/master/boards/RFSoC4x2/packages/xrfclk-patch)
@@ -53,3 +59,4 @@ time make BOARDDIR=/home/sega/git-projects/ZCU216-PYNQ/ZCU216/ BOARDS=ZCU216
  source ${HOME}/petalinux/settings.sh
  source /tools/Xilinx/Vivado/2022.1/settings64.sh
  source /tools/Xilinx/Vitis/2022.1/settings64.sh
+```
