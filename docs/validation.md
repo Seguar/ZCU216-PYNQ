@@ -1,6 +1,6 @@
 # Validation status
 
-Checked 2026-11-16 against PYNQ v4.0.0 and AMD 2025.2. This is a source-port update, not a new boot-tested image release.
+Checked 2026-11-16 against PYNQ v4.0.0 and AMD 2025.2. A complete experimental image now exists and has passed offline checks. It has not been physically boot-tested.
 
 ## Test / how
 
@@ -14,6 +14,8 @@ SDTGen reports a fallback warning for `CONFIG.PSU__PSS_REF_CLK__FREQMHZ`; the re
 
 ## Conclusion / remaining work
 
-The modern board descriptor and wrapper are exercised through hardware/SDT generation. Full EDF boot/kernel compilation, complete image assembly, fresh-card boot, runtime allocation/Jupyter/overlay and RF/MTS operation have **not** been run for this port. Build `boot`, then `image`, inspect the final boot artifacts, and validate on the actual ZCU216 before calling a produced image hardware-verified.
+All EDF boot/kernel/zocl/kernel-devsrc builds and complete image assembly passed. The exact assembled image passed partition bounds, FAT/ext4 integrity, boot-file comparisons, final DTB, root identity, installed dependency commit and SSH service/socket ordering checks. PYNQ 4.0.0 and RFSoC libraries imported under ARM user-mode QEMU; NumPy sum(arange(1024)) returned 523776. Seven hardware-free source/cleanup tests passed. The final Linux map exposes 4095 MiB of the stock 4 GiB.
+
+Fresh-card boot, runtime allocation/Jupyter/overlay on the board and RF/MTS operation remain **unverified**. See the experimental release for the image, exact hashes, package inventory, kernel configuration and resolved EDF revisions. Do not call this image hardware-verified.
 
 No running board or RFSoC configuration was changed. See `validation.json` for the machine-readable status.

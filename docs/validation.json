@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "status": "source-port-validated",
+  "status": "image-built-offline-validated",
   "checks": {
     "pinned_source_contract": "PASS",
     "vivado_2025_2_ps_export": "PASS",
@@ -14,16 +14,35 @@
     "ps_reference_clock_hz": 33333333,
     "boot_make_target_dry_run": "PASS",
     "legacy_binary_integrity": "PASS",
-    "recovered_runtime_clock_integrity": "PASS"
+    "recovered_runtime_clock_integrity": "PASS",
+    "edf_bootbin_build": "PASS",
+    "edf_kernel_build": "PASS",
+    "edf_zocl_build": "PASS",
+    "edf_kernel_devsrc_build": "PASS",
+    "complete_image_build": "PASS",
+    "exact_image_partition_bounds": "PASS",
+    "exact_image_fat_ext4": "PASS",
+    "exact_image_boot_files": "PASS",
+    "exact_image_linux_dtb": "PASS",
+    "exact_image_root_identity": "PASS",
+    "exact_image_kernel_modules_zocl_index": "PASS",
+    "exact_image_ssh_unit_ordering": "PASS",
+    "installed_python_git_commits": "PASS",
+    "arm_user_qemu_imports_and_numpy_math": "PASS",
+    "source_cleanup_unittest_count": 7
   },
   "not_run": [
-    "Full EDF kernel/boot firmware compilation",
-    "Complete SD image build",
     "Fresh-image ZCU216 boot",
     "PYNQ runtime tests on the updated board",
     "RF clock programming, converters, SYSREF or MTS",
     "Compatibility of recovered Vivado 2023.2.2 overlay with PYNQ 4"
   ],
   "sdtgen_warning": "CONFIG.PSU__PSS_REF_CLK__FREQMHZ fallback warning; compiled SDT clock-frequency independently checked as 33333333 Hz. Firmware execution is not proven by this check.",
-  "hardware_scope": "PS-only XSA export; no PL implementation/bitstream or timing claim"
+  "hardware_scope": "PS-only XSA export; no PL implementation/bitstream or timing claim",
+  "raw_image": {
+    "bytes": 8268021760,
+    "sha256": "10b449e044b60006426c30497d5feeaf2aeccc22a57a7d9774056d0c1aba999d"
+  },
+  "release": "v4.0.0-zcu216.1-rc1",
+  "linux_memory_bytes": 4293918720
 }

@@ -2,7 +2,7 @@
 
 ZCU216 board port targeting **PYNQ 4.0.0**, Ubuntu 24.04 / Python 3.12, and **AMD 2025.2 EDF**. PetaLinux is not used by the current build.
 
-**Status: source port / hardware-description validated; no new SD image or ZCU216 boot/RF validation is claimed.** The old deployed PYNQ 3.0.1 beamforming installation and its recovered clock files remain documented under [runtime/beamforming](runtime/beamforming/README.md).
+**Status: experimental image built and checked offline; physical ZCU216 boot/RF validation remains pending.** The old deployed PYNQ 3.0.1 beamforming installation and its recovered clock files remain documented under [runtime/beamforming](runtime/beamforming/README.md).
 
 ## Current port
 
@@ -13,6 +13,10 @@ ZCU216 board port targeting **PYNQ 4.0.0**, Ubuntu 24.04 / Python 3.12, and **AM
 - Standard PYNQ 4 RFSoC libraries and non-RF image self-tests.
 
 This is a **bring-your-own-application-overlay** image port. The historical 2023.2.2 base overlay is not silently installed as 2025.2 hardware. Its bit/HWH/XSA bytes are preserved under [legacy/overlays/base](legacy/overlays/base), with hashes in [docs/legacy-artifacts.json](docs/legacy-artifacts.json). MTS wrapper/API migration and RF performance require separate validation; old binary overlays and patches are not assumed compatible with PYNQ 4.
+
+## Image download
+
+Download the compressed image and `SHA256SUMS` from the [experimental PYNQ 4 release](https://github.com/Seguar/ZCU216-PYNQ/releases/tag/v4.0.0-zcu216.1-rc1). Use a **16 GB or larger SD card**; the raw image is 8,268,021,760 bytes. The exact image passed offline filesystem, boot-artifact, device-tree and identity checks; ARM user-mode QEMU imports/math passed. It has **not** been boot-tested on the physical board. The release includes provenance, package inventory, kernel configuration and resolved EDF revisions.
 
 ## Build
 
@@ -35,7 +39,7 @@ For a complete image, put the official PYNQ 4.0.0 AArch64 rootfs and source dist
 ./scripts/build.sh image  # complete SD image
 ```
 
-Default output: `PYNQ/sdbuild/output/ZCU216-4.0.0.img`. See [build details](docs/build.md), [pinned inputs](docs/build-inputs.json) and [validation](docs/validation.md). No image is attached to a new release until a build exists and its validation level is recorded.
+Default output: `PYNQ/sdbuild/output/ZCU216-4.0.0.img`. See [build details](docs/build.md), [pinned inputs](docs/build-inputs.json) and [validation](docs/validation.md). Release assets are experimental until their exact image has passed fresh-card boot and scoped runtime tests.
 
 ## Existing beamforming deployment
 
