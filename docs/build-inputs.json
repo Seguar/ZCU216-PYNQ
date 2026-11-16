@@ -10,5 +10,9 @@
   "ps_ddr_bytes": 4294967296,
   "custom_machine": "zynqmp-zcu216-pynq",
   "boot_overlay": null,
-  "scope": "PS boot/image port; application RF/MTS overlay migration requires separate validation"
+  "scope": "PS boot/image port; application RF/MTS overlay migration requires separate validation",
+  "python_git_dependencies": {
+    "PYNQ-Metadata": "7ff39f7e699b854973e4f894fb6e5272534a42f7",
+    "PYNQ-Utils": "fe88b2fd04b6789bd2c9d50c47b140e8453a6886"
+  }
 }
