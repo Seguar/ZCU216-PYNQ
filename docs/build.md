@@ -31,3 +31,7 @@ The archived xrfclk reload and xrfdc MTS patches target older APIs/structures. T
 Run `python3 scripts/check_port.py` for submodule, memory-policy, legacy isolation, recovered-clock integrity and self-test-ID checks. `pynq-selftest` on a future installed image runs the board's non-RF manifest; it does not establish RF functionality or program clocks by default.
 
 Before advertising an image as boot-tested: inspect final DT identity/RAM/UART/PHY/CLK104/CMA and zocl policy, flash a measured-capacity card with full readback checksum, capture a fresh ZCU216 boot, and exercise PYNQ/Jupyter with an explicitly compatible overlay. Do not use another board's default hostname or address as unique identity.
+
+## Public-image identity
+
+The final `release-identity` package removes inherited SSH host keys, known user authentication/history files, DHCP leases, machine ID and random seed from the offline build root. It sets hostname `pynq-zcu216` and enables key generation as a requirement of both SSH service and socket, so each installed board gets its own host keys before SSH accepts connections. Factory PYNQ credentials remain `xilinx` / `xilinx`; change them on first use. This does not touch a running board.
