@@ -14,5 +14,5 @@ for name, revision in pins.items():
     original = f'git+https://github.com/Xilinx/{name}.git\n'
     if text.count(original) != 1:
         raise ValueError(f'Unexpected upstream PYNQ stage: {name}')
-    text = text.replace(original, original.rstrip('\n') + '@' + revision + '\n')
+    text = text.replace('python3 -m pip install --upgrade ' + original, 'python3 -m pip install --upgrade --force-reinstall --no-deps ' + original.rstrip('\n') + '@' + revision + '\n')
 sys.stdout.write(text)
