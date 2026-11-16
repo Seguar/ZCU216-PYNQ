@@ -30,9 +30,9 @@ docker run --init --rm --network host --privileged "${security[@]}" \
             exit
         fi
         cd /port/PYNQ/sdbuild
-        if [[ "$BUILD_MODE" = boot ]]; then
-            make BOARDS=ZCU216 BOARDDIR=/port boot_ZCU216
-        else
+        make BOARDS=ZCU216 BOARDDIR=/port boot_ZCU216
+        /port/scripts/select_linux_dtb.sh
+        if [[ "$BUILD_MODE" = image ]]; then
             make BOARDS=ZCU216 BOARDDIR=/port
         fi
     '
