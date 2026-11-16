@@ -19,6 +19,7 @@ docker run --init --rm --network host --privileged "${security[@]}" \
     -v "$tools:$tools:ro" -v "$license_dir:$license_dir:ro" -v "$repo:/port" \
     "$image" bash -c '
         set -eo pipefail
+        if [[ "$BUILD_MODE" = image ]]; then sudo python3 /port/scripts/register_qemu.py; fi
         export PYNQ_BOARDNAME=ZCU216 FPGA_MANAGER=1
         before=$(sha256sum /port/ZCU216/hardware/ps.xsa 2>/dev/null || true)
         make -C /port/ZCU216/hardware
