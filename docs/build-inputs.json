@@ -1,0 +1,14 @@
+{
+  "pynq_tag": "v4.0.0",
+  "pynq_commit": "d90670c69f7b71ea1a5d23aaa3e0ec713ff5fa9f",
+  "rfsoc_reference_commit": "2a6beba6e984be859f738aee86b7be4ca4ca0475",
+  "amd_tools": "2025.2",
+  "edf_manifest_tag": "amd-edf-rel-v25.11.1",
+  "part": "xczu49dr-ffvf1760-2-e",
+  "board_preset": "xilinx.com:zcu216:part0:2.0",
+  "sdt_board": "zcu216-reva",
+  "ps_ddr_bytes": 4294967296,
+  "custom_machine": "zynqmp-zcu216-pynq",
+  "boot_overlay": null,
+  "scope": "PS boot/image port; application RF/MTS overlay migration requires separate validation"
+}

@@ -1,0 +1,10 @@
+{
+  "source_commit": "60be175",
+  "vivado_hwh_version": "2023.2.2",
+  "files": {
+    "base.bit": "b11f89c22766fc0dbea8cac7aec5ace05ca43242507177775f36db86e5640fa5",
+    "base.hwh": "2004181ea15788e6bb554d1a674c63198c49620e153d53ab6c2862df3399bd94",
+    "base.xsa": "b60a41ff81719b2668b42e6220a0c09c4a50613b3e5619509d34321349235988"
+  },
+  "status": "Preserved bytes; not installed by the PYNQ 4 port; no compatibility claim"
+}

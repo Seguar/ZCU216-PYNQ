@@ -1,0 +1,52 @@
+{
+  "board": "ZCU216",
+  "defaults": {
+    "hardware": false,
+    "timeout": 30
+  },
+  "tests": [
+    {
+      "id": "bash/resize",
+      "name": "Root filesystem auto-resize"
+    },
+    {
+      "id": "bash/networking",
+      "name": "DHCP/network availability"
+    },
+    {
+      "id": "python/cma",
+      "name": "CMA allocation"
+    },
+    {
+      "id": "python/jupyter",
+      "name": "Jupyter server"
+    },
+    {
+      "id": "python/xrt",
+      "name": "XRT runtime"
+    },
+    {
+      "id": "python/image_identity",
+      "name": "Image identity"
+    },
+    {
+      "id": "python/user_groups",
+      "name": "Default user/groups"
+    },
+    {
+      "id": "python/baseconfig",
+      "name": "Base configuration"
+    },
+    {
+      "id": "python/rfsoc_stack",
+      "name": "RFSoC Python libraries",
+      "params": {
+        "modules": [
+          "xrfclk",
+          "xrfdc",
+          "xsdfec"
+        ]
+      }
+    }
+  ]
+}

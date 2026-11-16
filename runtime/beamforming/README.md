@@ -23,7 +23,7 @@ The collection itself did not install or apply clock files.
 
 ## Toolchain boundaries
 
-- This repository documents the legacy PYNQ 3.0.1 image build with 2022.1 tools.
+- The current repository targets PYNQ 4.0.0 / AMD 2025.2 EDF; historical PYNQ 3.0.1 / 2022.1 instructions are archived under `legacy/`. This runtime snapshot remains the original 3.0.1 deployment and is not a PYNQ 4 validation.
 - The recovered application HWH declares **Vivado 2023.2.2**. Application overlay
   version and SD-image build version are separate facts.
 - The available build VM has **2025.2**. A new image or overlay build requires

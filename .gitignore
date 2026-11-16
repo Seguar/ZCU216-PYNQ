@@ -1,0 +1,10 @@
+/work/
+/artifacts/
+__pycache__/
+*.pyc
+/ZCU216/hardware/build/
+/ZCU216/hardware/*.xsa
+/ZCU216/hardware/*.hwh
+/ZCU216/hardware/*.log
+/ZCU216/hardware/*.jou
+/ZCU216/hardware/.Xil/

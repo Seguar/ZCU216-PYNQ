@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-16",
+  "status": "source-port-validated",
+  "checks": {
+    "pinned_source_contract": "PASS",
+    "vivado_2025_2_ps_export": "PASS",
+    "docker_hardware_wrapper": "PASS",
+    "sdtgen_board_export": "PASS",
+    "docker_sdt_wrapper": "PASS",
+    "sdt_with_edf_board_dtsi_compiled": "PASS",
+    "clk104_bridge_nodes": "PASS",
+    "cma_512_mib_low_bank": "PASS",
+    "ps_ddr_4_gib": "PASS",
+    "ps_reference_clock_hz": 33333333,
+    "boot_make_target_dry_run": "PASS",
+    "legacy_binary_integrity": "PASS",
+    "recovered_runtime_clock_integrity": "PASS"
+  },
+  "not_run": [
+    "Full EDF kernel/boot firmware compilation",
+    "Complete SD image build",
+    "Fresh-image ZCU216 boot",
+    "PYNQ runtime tests on the updated board",
+    "RF clock programming, converters, SYSREF or MTS",
+    "Compatibility of recovered Vivado 2023.2.2 overlay with PYNQ 4"
+  ],
+  "sdtgen_warning": "CONFIG.PSU__PSS_REF_CLK__FREQMHZ fallback warning; compiled SDT clock-frequency independently checked as 33333333 Hz. Firmware execution is not proven by this check.",
+  "hardware_scope": "PS-only XSA export; no PL implementation/bitstream or timing claim"
+}
